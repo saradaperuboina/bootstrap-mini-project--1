@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<!-- saved from url=(0048)http://getbootstrap.com/examples/carousel/#about -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="./images/favicon.ico">
+
+    <title>Assignment 3</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="./css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="./js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="./js/ie-emulation-modes-warning.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="./js/html5shiv.min.js"></script>
+      <script src="./js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Custom styles for this template -->
+    <link href="./css/carousel.css" rel="stylesheet">
+
+    <link href="./css/custom-final.css" rel="stylesheet">
+
+
+<!-- NAVBAR
+================================================== -->
+  <body>
+  <div class="navbar-wrapper">
+    <div class="container">
+
+      <nav class="navbar navbar-inverse navbar-static-top">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+                    aria-expanded="false" aria-controls="navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Assignment 3</a>
+          </div>
+          <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+              <li class="active"><a href="#">Home</a></li>
+              <li><a href="#watch">Watches</a></li>
+              <li><a href="#phone">Phones</a></li>
+              <li><a href="#tablet">Tablets</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+    </div>
+  </div>
+
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class=""></li>
+      <li data-target="#myCarousel" data-slide-to="1" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="2" class=""></li>
+    </ol>
+    <div class="carousel-inner" role="listbox">
+      <div class="item">
+        <a href="#watch"><img class="first-slide"
+             src="./images/smartwatch.jpg"
+             alt="First slide">
+        </a>
+        <div class="container">
+          <div class="carousel-caption">
+            <!--<h1>Smart Watch</h1>-->
+            <!--<p>Note: If you're viewing this page via a <code>file://</code> URL, the "next" and "previous"-->
+            <!--Glyphicon buttons on the left and right might not load/display properly due to web browser-->
+            <!--security rules.</p>-->
+            <p><a class="btn btn-lg btn-primary" href="#watch" role="button">Watch</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="item active">
+        <a href="#phone"><img class="second-slide"
+             src="./images/smartphone.jpg"
+             alt="Second slide"
+             href="#phone">
+        </a>
+        <div class="container">
+          <div class="carousel-caption">
+            <!--<h1>Smart Phone</h1>-->
+            <!--<p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida-->
+            <!--at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>-->
+            <p><a class="btn btn-lg btn-primary" href="#phone" role="button">Phone</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="item">
+        <a href="#tablet"><img class="third-slide"
+             src="./images/tablet.jpg"
+             alt="Third slide"
+             href="#tablet">
+        </a>
+        <div class="container">
+          <div class="carousel-caption">
+            <!--<h1>One more for good measure.</h1>-->
+            <!--<p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida-->
+            <!--at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>-->
+            <p><a class="btn btn-lg btn-primary" href="#tablet" role="button">Tablet</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+
+
+  <div id="watch">
+    <div class="container">
+
+      <hr/>
+      <h1>Watch Division</h1>
+      <h1><b>Click  and Double Click Events</b></h1>
+
+      <div class="row">
+
+        <h4>
+          <b>Click Events - Hide/Show or toggle the image on clicking the button</b>
+        </h4>
+
+        <br/>
+
+        <div>
+          <button class="btn btn-default col-sm-2 divblock" id="hide1">Show</button>
+          <button class="btn btn-default col-sm-2 divblock" id="hide2">Hide</button>
+          <button class="btn btn-default col-sm-2 divblock" id="hide3">Toggle</button>
+
+          <br/><br/>
+
+          <div class="text-center">
+            <img src="./images/watch_image1.png" height="400" width="600" alt="image1" id="img1"/>
+          </div>
+        </div>
+
+        <br/><br/>
+      </div>
+
+      <div class="row">
+
+        <h4>
+          <b>Double Click Events - FadeIn, FadeOut, FadeTo and FadeToggle Events</b>
+        </h4>
+
+        <br/><br/>
+
+        <div>
+          <button class="btn btn-default col-sm-2 divblock" id="fade1">Fade In</button>
+          <button class="btn btn-default col-sm-2 divblock" id="fade2">Fade Out</button>
+          <button class="btn btn-default col-sm-2 divblock" id="fade3">Fade Toggle</button>
+
+          <br/><br/>
+
+          <div class="fadediv col-sm-offset-4 col-sm-4" id="div1"></div>
+
+          <br/><br/><br/>
+
+          <button class="btn btn-default col-sm-2 divblock" id="fade4">Fade To</button>
+          <input class="divblock" type="range" min="0" max="10" value="5" id="rangeinput">
+          <span id="rangeValue">0.5 opacity</span>
+
+          <br/>
+          <br/>
+          <br/>
+
+          <div class="fadediv col-sm-offset-4 col-sm-4" id="div2">
+
+          </div>
+
+          <br/><br/><br/>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div id="phone">
+
+    <div class="container">
+      <hr/>
+      <h1>Phone Division</h1>
+      <h1><b>Mouseenter and Mouseleave Events</b></h1>
+
+      <div class="row">
+
+        <h4>
+          <b>Animate and Stop CSS effects on mouseenter and mouseleave events</b>
+        </h4>
+
+        <br/>
+
+        <div id="phonediv1">
+          <p id="div10">
+            This is a small paragraph
+          </p>
+        </div>
+
+        <div>
+          <ol>
+            <li>Mouseenter Event changes opacity from 1 to 0.5, height from 200px to 400px,
+              width from 200px to 400px and fontsize from 12px to 30px</li>
+            <li>The animation event is for 3 seconds</li>
+            <li>If mouse leaves the div when mouseover event is runnning, then the animation will stop and
+              starts mouseleave event
+            </li>
+            <li>If mouse enters the div when mouseleave event is runnning, then the animation will stop and
+              starts mouseenter event
+            </li>
+          </ol>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <div id="tablet">
+    <div class="container">
+      <hr/>
+      <h1>Tablets Division</h1>
+
+      <h1><b>Keypress and Keydown Events</b></h1>
+
+      <div class="row">
+        <h4><b>Chain Fading Events</b></h4>
+        <ol>
+          <li>FadeOut for 2 secs</li>
+          <li>FadeIn 2 secs</li>
+          <li>FadeTo 0.2 opacity 2 secs</li>
+          <li>FadeTo 1 opacity 2 secs</li>
+        </ol>
+        <br/>
+        <div>
+          <div>
+            <p>Press any key in the input to start the chaining of 3 fading events</p>
+            <input type="text" id="keyinput1">
+          </div>
+          <br/>
+          <div class="fadediv col-sm-offset-4 col-sm-4" id="keydiv1">
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <h4><b>Chain Animate Events</b></h4>
+        <ol>
+          <li>Increase width and height from 200px to 500px in 2 secs</li>
+          <li>Move the div left by 250px and opacity to 0.2 in 2 secs</li>
+          <li>Change back to original style in 2 secs</li>
+        </ol>
+        <br/>
+        <div>
+          <div>
+            <p>Press any key in the input to start the chaining of 3 animate events</p>
+            <input type="text" id="keyinput2">
+          </div>
+          <br/>
+          <div class="fadediv col-sm-offset-4 col-sm-4" id="keydiv2">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="contact">
+
+    <div class="container">
+      <hr/>
+      <h1>Contact Division</h1>
+      <div class="row">
+        <table id="tbl" style="border-collapse:collapse" align="center">
+          <thead>
+          <tr>
+            <th class="col-sm-2 text-center">First Name</th>
+            <th class="col-sm-2 text-center">Last Name</th>
+            <th class="col-sm-2 text-center">Email Address</th>
+            <th class="col-sm-2 text-center">Telephone Number</th>
+            <th class="col-sm-2 text-center">Remove</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+            <td class='col-sm-2 text-center'>
+              <input type="text" id="fname">
+            </td>
+            <td class='col-sm-2 text-center'>
+              <input type="text" id="lname">
+            </td>
+            <td class='col-sm-2 text-center'>
+              <input type="text" id="email">
+            </td>
+            <td class='col-sm-2 text-center'>
+              <input type="text" id="phne">
+            </td>
+            <td class='col-sm-2 text-center'>
+              <button class='btn btn-success rounded' id="addRow">+</button>
+            </td>
+          </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <br/>
+
+      <div class="row">
+        <ol>
+          <li>
+            <p>
+              <b>Adding/Editing Content: </b> Double Click on the table cell will show
+              the text box for adding/editing the content.
+            </p>
+          </li>
+          <li>
+            <p>
+              <b>Saving the edited Content: </b> Click anywhere on document will save the content
+              in the text box.
+            </p>
+          </li>
+          <li>
+            <p>Content Editing cannot be performed on last column of the table</p>
+          </li>
+          <li>
+            <p>
+              Exept header row and last column,
+              cell styling (similar to <span style="background-color: blue;color: red">blue background and red font color</span>)
+              is applied on all table cells
+            </p>
+          </li>
+        </ol>
+      </div>
+    </div>
+
+  </div>
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="./js/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="./js/jquery.min.js"><\/script>')</script>
+    <script src="./js/bootstrap.min.js"></script>
+    <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
+    <script src="./js/holder.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="./js/ie10-viewport-bug-workaround.js"></script>
+<script src="js/custom-final.js"></script>
+
+</body></html>

@@ -1,0 +1,96 @@
+body{
+    background-color: rgba(0, 0, 0, 0.29);
+}
+
+
+td,th{
+    border: rgba(84, 84, 84, 0.58) solid thin;
+}
+
+.rounded{
+    border-radius: 50%;
+    margin: 5px;
+}
+
+.hover{
+    background-color: blue;
+    color: red;
+}
+
+.col-sm-2{
+    padding: 5px;
+}
+
+input{
+    padding : 0;
+}
+
+input[type=text]{
+    max-width: 150px;
+}
+
+tr:last-child td{
+    border-right: 0;
+    border-left: 0;
+    border-bottom: 0;
+}
+
+.row{
+    margin:0;
+}
+
+.fadediv{
+    height:50px;
+    background-color:lightgreen;
+}
+
+#keydiv1{
+    height:200px;
+    width: 200px;
+    background-color:black;
+}
+
+#keydiv2{
+    height:200px;
+    width: 200px;
+    background-color:blue;
+}
+
+#rangeinput{
+    width: 33.33333%;
+    margin: 2px;
+    display: inline-block;
+}
+
+.divblock{
+    margin: 2px;
+}
+
+#phonediv1 p{
+    height:200px;
+    background-color: red;
+    width: 200px;
+    font-size: 12px;
+}
+
+.container{
+    width:66.66666%;
+}
+
+hr{
+    border-color: black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
